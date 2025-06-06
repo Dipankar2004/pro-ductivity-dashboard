@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=dxoYK8bxqiJr&format=png&color=000000">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+
+/>
+</head>
+<body>
+    
+    <div id="main">
+        <nav>
+           <h1>Dipankar's Dashboard</h1> 
+           <button id="switch-btn">Switch</button>
+        </nav>
+        <section class="allElems">
+            <header>
+               <div class="header-1">
+                  <input type="text" id="cityInput" placeholder="Enter city name" />
+                   <button id="searchBtn">Search</button>
+                  <h2></h2>
+                  <h1></h1>
+                  <h4></h4>
+
+                </div>
+            
+               <div class="header-2">
+                <h2></h2>
+                <h4></h4>
+                <h5></h5>
+               <h3></h3>
+               <p></p>
+               </div>
+            </header>
+
+            <div class="allFeatures">
+                <div class="todo elem" id="0">
+                <img class="theme-img" src="https://plus.unsplash.com/premium_photo-1675249003523-2dfe1f1bcbe1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                
+                 data-light="https://plus.unsplash.com/premium_photo-1675249003523-2dfe1f1bcbe1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                 data-dark="https://th.bing.com/th/id/OIP.qa4VD1HotpMcfLDG4CdUvQHaEK?pid=ImgDet&w=474&h=266&rs=1" 
+                
+                alt="">
+                <h2>To Do List</h2>
+            </div>
+            <div class="daily elem" id="1">
+               <img class="theme-img" src="https://img.freepik.com/premium-photo/illustration-environmental-business_1003686-17190.jpg" 
+               
+                 data-light="https://img.freepik.com/premium-photo/illustration-environmental-business_1003686-17190.jpg" 
+                 data-dark="https://static.vecteezy.com/system/resources/previews/024/022/315/large_2x/3d-full-body-earth-in-cartoon-style-full-studio-center-in-small-white-background-ai-generated-free-photo.jpg"
+
+               alt="">
+                <h2>Daily Planner</h2>
+            </div>
+            <div class="motivation elem" id="2">
+                <img class="theme-img" src="https://unsplash.com/blog/content/images/2021/09/javier-miranda-MrWOCGKFVDg-unsplash-2.jpg" 
+                
+                data-light="https://unsplash.com/blog/content/images/2021/09/javier-miranda-MrWOCGKFVDg-unsplash-2.jpg" 
+                 data-dark="https://img.freepik.com/premium-photo/tree-growing-out-heart_310696-66.jpg"
+                
+                alt="">
+                <h2>Motivation</h2>
+            </div>
+            <div class="pomo elem" id="3">
+                <img class="theme-img" src="https://img.freepik.com/premium-photo/abstract-clock-time-essence_882186-9836.jpg" 
+                
+                data-light="https://img.freepik.com/premium-photo/abstract-clock-time-essence_882186-9836.jpg" 
+                 data-dark="https://static.wixstatic.com/media/7308ec_9a40e1fe3333406ab89175aedb2ae15a~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7308ec_9a40e1fe3333406ab89175aedb2ae15a~mv2.jpg"
+                
+                alt="">
+                <h2>Pomodoro Timer</h2>
+            </div>
+            <div class="goals elem" id="4">
+                <img class="theme-img" src="https://competition.adesignaward.com/designs/d9e13e98876280070475b7db9b01566b19c807e9-thumb-big.jpg" 
+                
+                data-light="https://competition.adesignaward.com/designs/d9e13e98876280070475b7db9b01566b19c807e9-thumb-big.jpg" 
+                 data-dark="https://img.pikbest.com/wp/202346/business-concept-illustration-of-life-or-goals-in-3d-rendered_9618746.jpg!bw700"
+                
+                alt="">
+                <h2>Daily Goals</h2>
+            </div>
+            </div>
+        </section>
+        <section class="fullElem todo-list-fullpage" id="task-page">
+            <button class="back" id="0">Close</button>
+            <h2>Your Personalised Task List</h2>
+        
+            <div class="todo-container">
+                <div class="addTask">
+                    <form>
+                        <input id="task-input" type="text" placeholder="Enter Task" />
+                        <textarea placeholder="Enter Details" id="task-details" rows="10" cols="30"></textarea>
+                        <div class="mark-imp">
+                            <input type="checkbox" id="check" />
+                            <label for="check">Mark as important!</label>
+                        </div>
+                        <button type="submit">Add Task</button>
+                    </form>
+                </div>
+                <div class="alltask-details-container">
+                    <div class="alltask">
+                        <div class="task">
+                            <h5>Sample Task <span class="true">Important</span></h5>
+                            <button>Mark as Completed</button>
+                        </div>
+                    </div>
+                    <div class="task-details-view" id="task-details-view">
+                        <h3>Task Title</h3>
+                         <p><strong>Importance:</strong> <span id="importance-content"></span></p>
+                        <p><strong>Description:</strong> <span id="details-content"></span></p>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fullElem daily-planner-fullpage">
+            <button class="back" id="1">Close</button>
+            <h1>Plan your Daily to more Productive</h1>
+
+            <div class="day-planner">
+               
+            </div>
+        </section>
+        <section class="fullElem motivational-fullpage">
+            <button class="back" id="2">Close</button>
+            <div class="motivational-fullpage-container">
+                <div class="motivation-container">
+                 <div class="motivation-wrapper">
+                    <img src="./icons8-quote-30.png" alt="">
+                     <div class="motivation-1">
+                        <h2>Quote of the day</h2>
+                     </div>
+                     <div class="motivation-2">
+                        <h1></h1>
+                     </div>
+                     <div class="motivation-3">
+                        <h2></h2>
+                     </div>
+                 </div>
+            </div>
+            </div>
+        </section>
+        <section class="fullElem pomodoro-fullpage">
+            <button class="back" id="3">Close</button>
+            <h2>Study with me!</h2>
+        
+            <h4 class="session">Study time</h4>
+            <div class="pomo-timer">
+                <div class="mode-buttons">
+                    <button class="mode-btn" id="pomodoro">Pomodoro</button>
+                    <button class="mode-btn" id="short-break">Short Break</button>
+                    <button class="mode-btn" id="long-break">Long Break</button>
+                </div>
+        
+                <h1>01:00:00</h1>
+                <button class="start-timer">Start</button>
+                <button class="pause-timer">Pause</button>        
+                <button class="reset-timer">Reset</button>
+            </div>
+        </section>
+       <section class="fullElem daily-goals-fullpage">
+          <button class="back" id="4">Close</button>
+          <h2 id="goal-date">Goals for </h2>
+        
+          <div class="container">
+            <div class="box">
+              <h3>Add Goal</h3>
+              <input type="text" id="goalInput" class="enter-goal" placeholder="Enter goal" />
+              <input type="number" id="timeInput" class="enter-time" placeholder="Set time (minutes)" />
+              <div class="add-goal">
+                <button>Add Goal</button>
+              </div>
+            </div>
+            <div class="box">
+              <h3>Your Goals</h3>
+              <div id="goalsList" class="your-goal"></div>
+            </div>
+            <div class="box">
+              <h3>Time Spent</h3>
+              <div id="trackList" class="time-spent"></div>
+            </div>
+            <div class="box calendar-box">
+                <div id="calendarCompletion" style="font-weight:bold; font-size: 18px; text-align:center; margin-bottom: 10px;"></div>
+              <h3>Calendar</h3>
+              <div id="calendar">
+                <div class="calendar-grid" id="calendarGrid"></div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="submit">
+            <button>Submit</button>
+          </div>
+        
+          <div class="chart" id="resultChart" style="display: none;">
+            <h3>Results</h3>
+            <div id="bars"></div>
+          </div>
+       </section>
+    </div>
+
+    <div class="footer">
+         <p>&copy; 2025 Dipankar Mandal. All rights reserved.</p>
+       </div>
+    <script src="./script.js"></script>
+</body>
+</html>
